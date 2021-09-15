@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- normalize -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- ionicons -->
+		<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+
+		<!-- scripts -->
+		<script defer src="./assets/js/main.js"></script>
+
+		<title>Sidebar sub menus</title>
+	</head>
+	<body id="body-pd">
+		<div class="l-navbar tooltip" id="navbar">
+			<nav class="nav">
+				<div>
+					<div class="nav__brand">
+						<ion-icon
+							name="menu-outline"
+							class="nav__toggle"
+							id="nav-toggle"
+						></ion-icon>
+						<a href="#" class="nav__logo">Mirror</a>
+					</div>
+					<div class="nav__list">
+						<a href="#" class="nav__link active-link">
+							<ion-icon name="home-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Dashboard</span>
+						</a>
+
+						<a href="#" class="nav__link">
+							<ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Messenger</span>
+						</a>
+
+						<div class="nav__link collapse">
+							<ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Projects</span>
+
+							<ion-icon
+								name="chevron-down-outline"
+								class="collapse__link"
+							></ion-icon>
+							<ul class="collapse__menu">
+								<a href="#" class="collapse__sublink">Data</a>
+								<a href="#" class="collapse__sublink">Group</a>
+								<a href="#" class="collapse__sublink">Members</a>
+							</ul>
+						</div>
+
+						<a href="#" class="nav__link">
+							<ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Analytics</span>
+						</a>
+
+						<div class="nav__link collapse">
+							<ion-icon name="people-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Team</span>
+
+							<ion-icon
+								name="chevron-down-outline"
+								class="collapse__link"
+							></ion-icon>
+							<ul class="collapse__menu">
+								<a href="#" class="collapse__sublink">Data</a>
+								<a href="#" class="collapse__sublink">Group</a>
+								<a href="#" class="collapse__sublink">Members</a>
+							</ul>
+						</div>
+
+						<a href="#" class="nav__link">
+							<ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+							<span class="nav__name">Settings</span>
+						</a>
+					</div>
+				</div>
+
+				<a href="#" class="nav__link">
+					<ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+					<span class="nav__name">Log Out</span>
+				</a>
+			</nav>
+		</div>
+
+		<h1>Componentes</h1>
+	</body>
+</html>
